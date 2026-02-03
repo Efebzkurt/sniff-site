@@ -1,8 +1,6 @@
 import { HeartHandshake } from "lucide-react";
 import React from "react";
 
-// Topluluk vurgusu için ikon
-
 const CommunityRules = () => {
   return (
     <main className="pt-32 pb-24 bg-white min-h-screen">
@@ -29,8 +27,8 @@ const CommunityRules = () => {
             oluşturulmuştur. <br />
             <br />
             <span className="font-semibold">
-              Sniff’i kullanarak aşağıdaki Topluluk Kuralları’nı kabul etmiş
-              sayılırsınız.
+              Sniff&rsquo;i kullanarak aşağıdaki Topluluk Kuralları&rsquo;nı
+              kabul etmiş sayılırsınız.
             </span>
           </p>
         </div>
@@ -86,13 +84,71 @@ const CommunityRules = () => {
             </p>
           </section>
 
-          {/* 3. Güvenlik Önceliğimizdir */}
+          {/* --- 3. YENİ EKLENEN KISIM: ÇOCUK GÜVENLİĞİ (GOOGLE PLAY ZORUNLULUĞU) --- */}
+          <section id="child-safety" className="scroll-mt-32">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <span className="bg-red-100 text-red-600 w-8 h-8 flex items-center justify-center rounded-full text-sm">
+                3
+              </span>
+              Çocuk Güvenliği Standartları (CSAE Politikası)
+            </h2>
+            <div className="pl-12">
+              <p className="mb-4 font-medium text-gray-800">
+                Sniff olarak platformumuzda çocukların güvenliğini sağlamayı en
+                büyük öncelik kabul ediyoruz. Çocuk Cinsel İstismarı
+                Materyallerine (CSAM/CSAE) karşı{" "}
+                <span className="text-red-600 font-bold">SIFIR TOLERANS</span>{" "}
+                politikamız vardır.
+              </p>
+              <ul className="list-disc space-y-3 marker:text-red-600">
+                <li>
+                  <span className="font-semibold text-gray-900">
+                    Yasaklı İçerik:
+                  </span>{" "}
+                  Çocukların istismarını, tacizini, cinsel sömürüsünü veya
+                  çıplaklığını içeren, teşvik eden veya normalleştiren her türlü
+                  içerik kesinlikle yasaktır.
+                </li>
+                <li>
+                  <span className="font-semibold text-gray-900">Yaptırım:</span>{" "}
+                  Bu tür içerik paylaşan, isteyen veya bulunduran kullanıcıların
+                  hesapları derhal ve kalıcı olarak kapatılır.
+                </li>
+                <li>
+                  {/* BURASI DÜZELTİLDİ: Merkezi'ne -> Merkezi&apos;ne */}
+                  <span className="font-semibold text-gray-900">
+                    Yasal Bildirim:
+                  </span>{" "}
+                  Tespit edilen tüm yasa dışı içerikler ve ilgili kullanıcı
+                  bilgileri, ilgili kolluk kuvvetlerine bildirilir.
+                </li>
+                <li>
+                  <span className="font-semibold text-gray-900">
+                    Raporlama:
+                  </span>{" "}
+                  Kullanıcılarımız, şüpheli içerikleri veya davranışları
+                  uygulama içindeki &quot;Raporla/Şikayet Et&quot; butonu
+                  aracılığıyla veya doğrudan{" "}
+                  <a
+                    href="mailto:info@kakadulabs.com"
+                    className="text-blue-600 hover:underline"
+                  >
+                    info@kakadulabs.com
+                  </a>{" "}
+                  adresinden bize bildirmelidir. Raporlar 24 saat içinde
+                  incelenir.
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          {/* 4. Güvenlik Önceliğimizdir */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
               <span className="bg-gray-100 text-gray-900 w-8 h-8 flex items-center justify-center rounded-full text-sm">
-                3
+                4
               </span>
-              Güvenlik Önceliğimizdir
+              Genel Güvenlik Önceliğimizdir
             </h2>
             <ul className="list-disc pl-12 space-y-2 marker:text-yellow-500">
               <li>
@@ -111,11 +167,11 @@ const CommunityRules = () => {
             </ul>
           </section>
 
-          {/* 4. Sahte Profiller */}
+          {/* 5. Sahte Profiller */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
               <span className="bg-gray-100 text-gray-900 w-8 h-8 flex items-center justify-center rounded-full text-sm">
-                4
+                5
               </span>
               Sahte Profiller ve Yanıltıcı Davranışlar
             </h2>
@@ -132,11 +188,11 @@ const CommunityRules = () => {
             </p>
           </section>
 
-          {/* 5. Uygunsuz ve Yasaklı İçerikler */}
+          {/* 6. Uygunsuz ve Yasaklı İçerikler */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
               <span className="bg-gray-100 text-gray-900 w-8 h-8 flex items-center justify-center rounded-full text-sm">
-                5
+                6
               </span>
               Uygunsuz ve Yasaklı İçerikler
             </h2>
@@ -161,11 +217,11 @@ const CommunityRules = () => {
             </p>
           </section>
 
-          {/* 6. Reklam ve Spam */}
+          {/* 7. Reklam ve Spam */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
               <span className="bg-gray-100 text-gray-900 w-8 h-8 flex items-center justify-center rounded-full text-sm">
-                6
+                7
               </span>
               Reklam, Spam ve Ticari Kullanım
             </h2>
@@ -175,16 +231,16 @@ const CommunityRules = () => {
               </li>
               <li>
                 Sniff, kişisel ve sosyal kullanım amacıyla tasarlanmıştır;
-                ticari kullanım Sniff’in yazılı izni olmadan yasaktır.
+                ticari kullanım Sniff&rsquo;in yazılı izni olmadan yasaktır.
               </li>
             </ul>
           </section>
 
-          {/* 7. Köpekler ve Hayvan Refahı */}
+          {/* 8. Köpekler ve Hayvan Refahı */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
               <span className="bg-gray-100 text-gray-900 w-8 h-8 flex items-center justify-center rounded-full text-sm">
-                7
+                8
               </span>
               Köpekler ve Hayvan Refahı
             </h2>
@@ -203,11 +259,11 @@ const CommunityRules = () => {
             </ul>
           </section>
 
-          {/* 8. Kuralların İhlali ve Yaptırımlar */}
+          {/* 9. Kuralların İhlali ve Yaptırımlar */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
               <span className="bg-gray-100 text-gray-900 w-8 h-8 flex items-center justify-center rounded-full text-sm">
-                8
+                9
               </span>
               Kuralların İhlali ve Yaptırımlar
             </h2>
@@ -220,25 +276,22 @@ const CommunityRules = () => {
               <li>İçerik kaldırma</li>
               <li>Hesap geçici olarak askıya alma</li>
               <li>Hesabı kalıcı olarak kapatma</li>
+              <li>Yasa dışı durumlarda yetkili mercilere bildirim</li>
             </ul>
-            <p className="mt-2 pl-12 text-sm text-gray-500">
-              Sniff, topluluğun güvenliği için gerekli gördüğü durumlarda
-              önceden bildirimde bulunmaksızın işlem yapma hakkını saklı tutar.
-            </p>
           </section>
 
-          {/* 9. Bildirim ve İtiraz */}
+          {/* 10. Bildirim ve İtiraz */}
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
               <span className="bg-gray-100 text-gray-900 w-8 h-8 flex items-center justify-center rounded-full text-sm">
-                9
+                10
               </span>
-              Bildirim ve İtiraz
+              Bildirim ve İletişim
             </h2>
             <p className="pl-12 mb-4">
-              Uygunsuz davranışları uygulama içinden bildirebilirsiniz.
-              Hesabınızla ilgili alınan kararlara itiraz etmek için bizimle
-              iletişime geçebilirsiniz:
+              Uygunsuz davranışları uygulama içinden &quot;Bildir&quot; butonunu
+              kullanarak veya aşağıdaki adresten bize ulaşarak
+              bildirebilirsiniz.
             </p>
             <div className="pl-12">
               <a
@@ -250,8 +303,8 @@ const CommunityRules = () => {
             </div>
           </section>
 
-          {/* 10. Son Söz */}
-          <section className="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100">
+          {/* SON SÖZ */}
+          <section className="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100 mt-16">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Son Söz</h2>
             <p className="text-gray-600 mb-2">
               Sniff, güvenli ve pozitif bir topluluk yaratmayı hedefler.
